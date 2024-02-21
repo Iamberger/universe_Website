@@ -38,13 +38,6 @@ const useStyles = makeStyles((theme) => ({
     padding: '10px 20px',
     display: 'flex',
     alignItems: 'center',
-    '& .MuiOutlinedInput-input': {
-      borderRadius: '50px', 
-      padding: '10px 0',
-    },
-    '& .MuiOutlinedInput-notchedOutline': {
-      border: 'none', 
-    },
     '& svg': {
       fontSize: '20px',
     },
@@ -74,19 +67,19 @@ const Navbar: React.FC = () => {
     <AppBar className={classes.appBar}>
       <Toolbar className={classes.toolbar}>
         <div className={classes.leftSection}>
-          <Link href="/pro" passHref>
+          <Link href="/pro">
             <Button className={classes.button}>Go Pro</Button>
           </Link>
-          <Link href="/jobs" passHref>
+          <Link href="/jobs">
             <Button className={classes.button}>Jobs</Button>
           </Link>
-          <Link href="/find designers" passHref>
+          <Link href="/find designers">
             <Button className={classes.button}>Find designer</Button>
           </Link>
-          <Link href="/inspiration" passHref>
+          <Link href="/inspiration" >
             <Button className={classes.button}>Inspiration</Button>
           </Link>
-          <Link href="/Courses" passHref>
+          <Link href="/Courses" >
             <Button className={classes.button}>Courses</Button>
           </Link>
         </div>
@@ -102,10 +95,10 @@ const Navbar: React.FC = () => {
               endAdornment: <SearchIcon />,
             }}
           />
-          <Link href="/log in " passHref>
+          <Link href="/log in ">
             <Button className={classes.button}>Log In</Button>
           </Link>
-          <Link href="/signup" passHref>
+          <Link href="/signup">
             <Button variant="contained" className={`${classes.button} ${classes.signUpButton}`}>
               Sign Up
             </Button>
